@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body{
+            background-color: rgb(167, 167, 167);
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container
+        {
+            height: 800px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            padding: 15px 25px 5px 25px;
+            background: azure;
+            height: 50vh;
+            width: 50vw;display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        input{
+            width: 250px;
+            height: 25px;
+        }
+        label{
+            text-align: left;
+        }
+        input[type=submit]
+        {
+            width: 65px;
+            background-color: rgb(30, 128, 30);
+            margin: 5px 0px 0px 30px;
+            color:white;
+            height: 35px;
+            border: 2px solid white;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="name">Name</label>
+            <input name="name" type="text">
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="">
+            <label for="">Age:</label>
+            <input type="number" name="age" id="">
+            <input type="submit" value="Submit">
+
+        </form>
+</div>
+</body>
+</html>
+<style>
+*{
+    color: #d4f7f5; /*light sky blue*/
+    color: #fff2fd; /*light pink*/
+}
+</style>
